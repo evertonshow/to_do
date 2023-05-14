@@ -1,4 +1,4 @@
-import React, { ReactNode, useMemo, useReducer } from "react";
+import { ReactNode, useMemo, useReducer } from "react";
 import TodoContext, { initialValue } from "./Context";
 import TodoReducer from "./reducer";
 

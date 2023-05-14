@@ -1,11 +1,17 @@
 import * as todoTypes from "./types";
-import { uuid } from "uuidv4";
+import useId from "react-id-generator";
 
-function reducer(state: any, action: any) {
+function reducer(
+  state: any,
+  action: {
+    type: string;
+    payload: { title: string; completed: boolean; id: string };
+  }
+) {
   switch (action.type) {
     case todoTypes.ADD_TODO:
       return state.concat({
-        id: uuid(),
+        id: useId(),
         title: action.payload.title,
         completed: false,
       });

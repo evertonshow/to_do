@@ -1,8 +1,8 @@
 import { createContext } from "react";
 
-export interface FilterContextType {
-  todos: any[];
-  dispatchTodos: (todos: []) => void;
+export interface TodosContextType {
+  todos: object[];
+  dispatchTodos: (todo: any) => void;
 }
 
 export const initialValue = {
@@ -10,6 +10,6 @@ export const initialValue = {
   dispatchTodos: () => {},
 };
 
-const Context = createContext<FilterContextType>(initialValue);
+const Context = createContext<TodosContextType>(initialValue);
 
 export default Context;
