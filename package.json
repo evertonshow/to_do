@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@types/node": "^18.14.0",
+    "formik": "^2.4.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-id-generator": "^3.0.2",
-    "vite-tsconfig-paths": "^4.0.5"
+    "uid": "^2.0.2",
+    "vite-tsconfig-paths": "^4.0.5",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

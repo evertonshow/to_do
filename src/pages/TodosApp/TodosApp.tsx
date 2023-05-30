@@ -1,7 +1,9 @@
+import TodoCreator from "components/containers/TodoCreator/TodoCreator";
+
 export default function TodosApp() {
   return (
     <>
-      <h1>hello world</h1>
+      <TodoCreator />
     </>
   );
 }
